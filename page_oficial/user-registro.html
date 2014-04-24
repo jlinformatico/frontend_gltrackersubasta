@@ -144,85 +144,99 @@
 *********************************************************************************
 -->
 
-  <div class="col-md-8">
+  <div class="col-md-10">
 
       <form class="form-horizontal" role="form">
       <div class="col-sm-12">
-        <label class="col-sm-4">ESPECIFICA TU MERCADERIA A TRASLADAR:</label>
+        <label class="col-sm-4">Ingresa tus datos Cliente</label>
       </div>
+
       <div class="form-group">
-        <label for="TIPO DE MERCADERIA" class="col-sm-2 control-label">TIPO DE MERCADERIA</label>
+        <label for="DNI" class="col-sm-2 control-label">DNI</label>
         <div class="col-sm-4">
-          <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="DNI">
+        </div>
+        <label for="inputEmail" class="col-sm-2 control-label">Razon Social</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Razon Social">
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label for="inputName" class="col-sm-2 control-label">Apellidos</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputName" placeholder="Apellidos">
           </div>
-             <select class="form-control ">
+          <label for="inputLastName" class="col-sm-2 control-label">Gerente</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Gerente">
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">Nombre</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputCel" placeholder="Nombre">
+          </div>   
+          <label for="inputLastName" class="col-sm-2 control-label">Email del Gerente</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Email">
+          </div>   
+      </div>
+
+      <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">telefono</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputCel" placeholder="telefono">
+          </div>   
+          <label for="inputLastName" class="col-sm-2 control-label">Cantidad de personal</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="cantidad">
+          </div>   
+      </div>
+
+      <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">celular</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputCel" placeholder="telefono">
+          </div>   
+          <label for="inputLastName" class="col-sm-2 control-label">ventas Anuales</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="ventas">
+          </div>   
+      </div>
+
+
+      <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">Rubro del Cliente</label>
+          <div class="col-sm-4">
+            <select class="form-control ">
               <option value="PA">Lima</option>
               <option value="CT">Tarapoto</option>
               <option value="NY">New York</option>
               <option value="MD">Maryland</option>
               <option value="VA">Virginia</option>
             </select>
-        </div>
-        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-4">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="email">
-        </div>
+          </div>   
+          <label for="inputLastName" class="col-sm-2 control-label">Numero de Camionetas</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Email">
+          </div>   
       </div>
-        <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">Cantidad</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="inputName" placeholder="Cantidad">
-          </div>
-          <label for="inputLastName" class="col-sm-2 control-label">Cel</label>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="inputLastName" placeholder="Cel">
-          </div>
-        </div>
 
         <div class="form-group">
-          <label for="inputCel" class="col-sm-2 control-label">Medidadas</label>
-          <div class="col-sm-4">
-            <input type="phone" class="form-control" id="inputCel" placeholder="Medidas">
-          </div>      
-        </div>
-
-        <div class="form-group">
-              <label for="inputTel" class="col-sm-2 control-label">Peso</label>
-          <div class="col-sm-4">
-            <input type="phone" class="form-control" id="inputTel" placeholder="Peso">
-          </div>
-        </div>
-
-        <div class="form-group">
-        <label for="inputTel" class="col-sm-2 control-label">SERVICIOS ADICIONALES</label>
-
         <div class="col-sm-offset-2 col-sm-10">
           <div class="checkbox">
           <label>
-            <p>
-            <input type="checkbox">Transporte  
-            </p>
-            <p>
-            <input type="checkbox">Almacenaje
-            </p>
-            <p>
-            <input type="checkbox">Escolta particular/policial
-            </p>
-            <p>
-            <input type="checkbox">Agenciamiento
-            </p>
-            <p>
-            <input type="checkbox">Seguros
-            </p>
-            
+            <input type="checkbox">Deseo que envie info al email.            
           </label>
-
           </div>
         </div>
         </div>
         <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
           <button type="submit" class="btn btn-default">Registrar</button>
+           <button type="cancel" class="btn btn-default">Cancelar</button>
         </div>
         </div>
       </form>
@@ -233,17 +247,6 @@
 *********************************************************************************
 -->
 
-
-
-
 </div>	
-
-
-
 </body>
-
-
 </html>
-
-
-
