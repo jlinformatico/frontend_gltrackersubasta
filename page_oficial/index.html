@@ -1,83 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../assets/ico/favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<header>
+	<link href="css/bootstrap.min.css" rel="stylesheet">	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-    <title>Signin Template for Bootstrap</title>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/favico-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/favico-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/favico-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/favico-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favico.png">
+        <link rel="shortcut icon" href="ico/favico.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/9281c719.vendor.css"/>        
+        <link rel="stylesheet" href="styles/3fc417cd.main.css"/>
+</header>
 
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<body>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<!---
+*********************************************************************************
+								BARRA DE NAVEGACION
+*********************************************************************************
+-->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
-  <body>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
 
-    <div class="container">
-    <h1>Sistema de Subasta Electronica de Servicios</h1>
-    <h2>Brayer Linares</h2>
-      <div class="row">
-            <div class="col-md-12">
-                <div class="pr-wrap">
-                    <div class="pass-reset">
-                        <label>lalalal
-                            Enter the email you signed up with</label>
-                        <input type="email" placeholder="Email" />
-                        <input type="submit" value="Submit" class="pass-reset-submit btn btn-success btn-sm" />
-                    </div>
-                </div>
-                <div class="wrap">
-                    <p class="form-title">
-                        Login</p>
-                    <form class="login">
-                    <input type="text" placeholder="Usurio" />
-                    <input type="password" placeholder="Contraseña" />
-                    <input type="submit" value="Entrar" class="btn btn-success btn-sm" />
-                    <div class="remember-forgot">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" />
-                                        Recordarme 
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6 forgot-pass-content">
-                                <a href="javascription:void(0)" class="forgot-pass">Olvidé mi contraseña</a>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+      	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Consulta Presupuesto</a></li>
+            <li><a href="#">Publica mercadería</a></li>
+            <li><a href="#">Buscar Proveedor</a></li>
+            <li><a href="user-preguntas.html">Preguntas Frecuentes</a></li>
+          </ul>
+        </li>
+        <li><a href="user_beneficio.html">Beneficios</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="page-signin.html">Inicia Sesion</a></li>
+            <li><a href="#">Registrate</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
 
-    </div> <!-- /container -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-    <div class="container">
+<!---
+*********************************************************************************
+							FIN BARRA DE NAVEGACION
+*********************************************************************************
+-->
+
+
+<!---
+*********************************************************************************
+							COMIENZO SLIDER
+*********************************************************************************
+-->
+
+<!-- RESPONSIVE SLIDER - START -->
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slide1.png">
+      <div class="carousel-caption">
+
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slide2.png">
+      <div class="carousel-caption">
+
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slide3.png">
+      <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<!-- RESPONSIVE SLIDER - END -->
+
+<!---
+*********************************************************************************
+						FIN SLIDER
+*********************************************************************************
+-->
+
+<br></br>
+
+<!---
+*********************************************************************************
+            COMIENSZO PANEL DE CONSULTA
+*********************************************************************************
+-->
+
+
+<div class="container">
+
+
+  <div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <h2 class="panel-title">Consulta Presupuesto</h2>
+    </div>
+
+    <div class="panel-body">
+
+        <form class="form-inline" role="form">
+
+          <div class="form-group col-lg-4">
+            <label for="exampleInputEmail1">Origen</label>
+            <select class="form-control ">
+              <option value="PA">Pennsylvania</option>
+              <option value="CT">Connecticut</option>
+              <option value="NY">New York</option>
+              <option value="MD">Maryland</option>
+              <option value="VA">Virginia</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-3">
+            <label for="exampleInputPassword1">Destino</label>
+            <select class="form-control ">
+              <option value="PA">Pennsylvania</option>
+              <option value="CT">Connecticut</option>
+              <option value="NY">New York</option>
+              <option value="MD">Maryland</option>
+              <option value="VA">Virginia</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="exampleInputFile">Compara presupuestos de diferentes proveedores!</label>
+            <button type="submit" class="btn btn-default">Consegir presupuesto</button>
+          </div> 
+       
+        </form>
   
-    <div class="posted-by">Posted By: <a href="http://www.jquery2dotnet.com">SHEPP developer</a></div>
+    </div>
+  </div>
+
+<!---
+*********************************************************************************
+            FIN DEL PANEL DE CONSULTA
+*********************************************************************************
+-->
+<a data-toggle="modal" href="#example" class="btn btn-primary btn-large">Abrir ventana modal</a>
+
+<div id="example" class="modal hide fade in" style="display: none;">
+    <div class="modal-header">
+        <a data-dismiss="modal" class="close">×</a>
+        <h3>Cabecera de la ventana</h3>
+     </div>
+     <div class="modal-body">
+         <h4>Texto de la ventana</h4>
+        <p>Mas texto en la ventana.</p>                
+    </div>
+    <div class="modal-footer">
+        <a href="index.html" class="btn btn-success">Guardar</a>
+        <a href="#" data-dismiss="modal" class="btn">Cerrar</a>
+    </div>
 </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
+<!---
+*********************************************************************************
+            COMIENSZO PANEL DE DESCRIPCIONES
+*********************************************************************************
+-->
+
+  <div class="row">
+
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img src="img/images.jpg" alt="...">
+    </a>
+    <div class="carousel-caption">
+                <h2>Beneficios de utilizar la plataforma</h2>
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img src="img/images.jpg" alt="...">
+    </a>
+    <div class="carousel-caption">
+                <h2>ERES UN CLIENTE, REGISTRA TU MERCADERIA</h2>
+
+    </div>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img src="img/images.jpg" alt="...">
+    </a>
+    <div class="carousel-caption">
+                <h2>ERES UN PROVEEDOR, REISTRA TUS SERVICIOS DE TRANPORTE</h2>
+    </div>
+  </div>
+
+  </div>
+  <!---
+*********************************************************************************
+           FINAL DEL PANEL DE DESCRIPCIONES
+*********************************************************************************
+-->
+
+  <h2>Empresas registradas</h2>
+
+  <!---
+*********************************************************************************
+              COMIENSZO SLIDER Empresas registradas
+*********************************************************************************
+-->
+
+<!-- RESPONSIVE SLIDER - START -->
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/banner_em2.jpg">
+      <div class="carousel-caption">
+
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/banner_em2.jpg">
+      <div class="carousel-caption">
+
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/banner_em2.jpg">
+      <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<!-- RESPONSIVE SLIDER - END -->
+
+<!---
+*********************************************************************************
+            FIN SLIDER Empresas registradas
+*********************************************************************************
+-->
+
+
+
+
+<!---
+*********************************************************************************
+            COMIENSZO SERVICIOS MAS POPULARES
+*********************************************************************************
+-->
+<div class="row">
+
+<h2>SERVICIOS MAS POPULARES</h2>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+     <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>
+        Hay dos tipos de servicio en la capa de transporte, orientado y no orientado a la conexión. En el servicio orientado a la conexión consta de tres partes: establecimiento, transferencia de datos, y liberación. En el servicio no orientado a la conexión se tratan los paquetes de forma individual.         
+
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+     <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>
+        Hay dos tipos de servicio en la capa de transporte, orientado y no orientado a la conexión. En el servicio orientado a la conexión consta de tres partes: establecimiento, transferencia de datos, y liberación. En el servicio no orientado a la conexión se tratan los paquetes de forma individual.         
+
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+     <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>
+        Hay dos tipos de servicio en la capa de transporte, orientado y no orientado a la conexión. En el servicio orientado a la conexión consta de tres partes: establecimiento, transferencia de datos, y liberación. En el servicio no orientado a la conexión se tratan los paquetes de forma individual.         
+
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+     <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>
+        Hay dos tipos de servicio en la capa de transporte, orientado y no orientado a la conexión. En el servicio orientado a la conexión consta de tres partes: establecimiento, transferencia de datos, y liberación. En el servicio no orientado a la conexión se tratan los paquetes de forma individual.         
+
+        </p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---
+*********************************************************************************
+            FIN  SERVICIOS MAS POPULARES
+*********************************************************************************
+-->
+
+<!---
+*********************************************************************************
+            comentarios de los usuarios 
+*********************************************************************************
+-->
+
+<!-- Head tags to include FontAwesome -->
+
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <h2>Responsive Quote Carousel BS3</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-0 col-md-12'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_1.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_2.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://wp-desk.com/lovinflat/images/persons/person_3.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
+
+<!---
+*********************************************************************************
+            final de los comentarios de los usuarios 
+*********************************************************************************
+-->
+
+
+
+</div>	
+
+        <!-- javascript
+        ================================================== -->
+        <script src="scripts/39914ff3.vendor-main.js"></script>        
+        <script src="scripts/756399db.vendor-usefull.js"></script>
+        <script src="scripts/e7058f60.vendor-form.js"></script>        
+        <script src="scripts/fc9d433c.vendor-editor.js"></script>        
+        <!--[if lte IE 8]>
+        <script src="scripts/eae815b5.excanvas.js"></script>
+        <![endif]-->
+        <script src="scripts/2ce1156c.vendor-graph.js"></script>    
+        <script src="scripts/37a77790.vendor-table.js"></script>
+        <script src="scripts/1581b2aa.vendor-maps.js"></script>        
+        <script src="scripts/5f4fd25b.vendor-util.js"></script>
+
+
+        <!-- required stilearn template js -->
+        <script src="scripts/5917523f.main.js"></script>
+        <!-- This scripts will be reload after pjax or if popstate event is active (use with class .re-execute) -->
+        <script src="scripts/89c3d6c9.initializer.js"></script>
+        
+
+
+</body>
+
+
 </html>
