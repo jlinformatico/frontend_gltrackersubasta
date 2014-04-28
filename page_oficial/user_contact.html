@@ -4,8 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <header>
-  <link href="css/bootstrap.min.css" rel="stylesheet">  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/favico-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/favico-114-precomposed.png">
@@ -23,7 +23,7 @@
 
 <!---
 *********************************************************************************
-                BARRA DE NAVEGACION
+                                BARRA DE NAVEGACION
 *********************************************************************************
 -->
 <nav class="navbar navbar-inverse" role="navigation">
@@ -55,7 +55,7 @@
           </ul>
         </li>
         <li><a href="user_beneficio.html">Beneficios</a></li>
-        <li><a href="user_contact.html">Contacto</a></li>
+        <li><a href="#">Contacto</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -71,14 +71,14 @@
 
 <!---
 *********************************************************************************
-              FIN BARRA DE NAVEGACION
+                            FIN BARRA DE NAVEGACION
 *********************************************************************************
 -->
 
 
 <!---
 *********************************************************************************
-              COMIENZO SLIDER
+                            COMIENZO SLIDER
 *********************************************************************************
 -->
 
@@ -137,52 +137,109 @@
 
 <!---
 *********************************************************************************
-            FIN SLIDER
+                        FIN SLIDER
 *********************************************************************************
 -->
 
 <br></br>
-<br></br>
-<div class="container">
 
- <fieldset>
-  <legend>PREGUNTAS FRECUENTES</legend>
-    <blockquote>
-    <fieldset>
-      <ul>
-          <li>Como hago una publicacion? </li>
-          <li>Cuando y que necesito para pagar?</li>
-          <li>Como puedo cambiar las notificaciones que me llegan al email?</li>
-          <li>Como puedo estar seguro de que mis objetos llegara? en en las mismas condiciones?</li>
-          <li>Como acepto una puja?</li>
-          <li>Como puedo saber si un transportista es de confianza?
-          <li>Como rechazo una puja?</li>
-          <li>Como elimino mi transporte de Subasta de Servicios de Transporte?</li>
-      </ul>
-    </fieldset>
 
-    </blockquote>
 
-    <blockquote>
-    <ul>
-       <li> <p> ¿Como registrarme en Subasta de Servicios de Transporte? </p></li>
-        <footer>  aqui esta mi respuesta</footer>
+<!---
+*********************************************************************************
+            COMIENSZO PANEL DE DESCRIPCIONES
+*********************************************************************************
+-->
 
-        <li>Administrar "Subasta de Servicios de Transporte"</li>
-        <li>He olvidado la contraseña</li>
-        <li>Como puedo cambiar la dirección de email?</li>
-        <li>Como puedo ajustar las notificaciones que me envian al email?</li>
-        <li>Como puedo ajustar las notificaciones que me envian por mensaje?</li>
-    </ul>
 
-    </blockquote>
 
- </fieldset>
-  
-
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1">
+                    Contactenos <small>No dude en contactar con nosotros</small></h1>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="nombre" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                direccion de Email</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Motivo</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Mensaje</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Enviar Mensaje</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+            <legend><span class="glyphicon glyphicon-globe"></span>&nbsp;Nuestras Oficinas</legend>
+            <address>
+                <strong>Tacna, Inc.</strong><br>
+                795 Folsom Ave, Suite 600<br>
+                San Francisco, CA 94107<br>
+                <abbr title="Phone">
+                    P:</abbr>
+                (123) 456-7890
+            </address>
+            <address>
+                <strong>Correo</strong><br>
+                <a href="mailto:#">ventas.last@subasta.com</a>
+            </address>
+            </form>
+        </div>
+    </div>
+</div>
+  <!---
+*********************************************************************************
+           FINAL DEL PANEL DE DESCRIPCIONES
+*********************************************************************************
+-->
 
 
+
+
+
+</div>  
 
         <!-- javascript
         ================================================== -->
@@ -210,3 +267,4 @@
 
 
 </html>
+

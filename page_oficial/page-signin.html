@@ -4,8 +4,6 @@
         <meta charset="utf-8">
         <title>Session</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="stilearning">
 
         <meta http-equiv="x-pjax-version" content="v173">
 
@@ -133,7 +131,7 @@
 										</a>
 									</div><!--/signin-brand-->
 
-									<form action="index.php" method="POST" data-validate="form" role="form" id="signin-form">
+									<form action="user_Mercancia.html" method="POST" data-validate="form" role="form" id="signin-form">
 										<p><small>Administración de cuenta. <a href="#">Leer mas?</a></small></p>
 										<div class="form-group">
 											<div class="input-group input-group-in">
@@ -173,7 +171,7 @@
 											<a href="#" rel="tooltip" title="Signin with Github account" class="btn btn-sm btn-cloud"><span class="fa fa-github"></span></a>
 										</p>
 
-										<p class="margin-top"><small>¿Usted no tiene una cuenta? <a data-toggle="tab" href="#signup"><strong>Crear una Cuenta</strong></a></small></p>
+										
 									</form><!--/#signin-form-->
 								</div><!--/signin-->
 
@@ -210,70 +208,10 @@
 							</div><!--/cols-->
 						</div><!--/row-->
 
-						<div class="signup tab-pane fade" id="signup">
-							<div class="signup-brand">
-								<img src="images/dummy/782e8c3f.stilearn-logo2.png" alt="Sign up">
-							</div>
-							<h1 class="text-lead">CREAR UNA CUENTA</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ad, sint, ea, dicta dolor nesciunt adipisci molestias molestiae ex fugit sunt quia praesentium? Deserunt atque tenetur mollitia perspiciatis doloribus sint. By creating an account you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
-							<p>Already have an account, please <a data-toggle="tab" href="#signin">Signin</a>.</p>
-
-							<form id="signup-form" data-validate="form" action="index.php" role="form">
-								<div class="row">
-									<div class="col-sm-5">
-										<div class="form-group">
-											<label class="control-label text-inverse" for="usernameUp">Username</label>
-											<input type="text" class="form-control" name="usernameUp" id="usernameUp" required="" minlength="4" maxlength="12" autocomplete="off">
-											<p class="helper-block text-muted"><small>May contain letters, digits, dashes and underscores, and should be between 4 and 12 characters long.</small></p>
-										</div>
-
-										<div class="form-group">
-											<label class="control-label text-inverse" for="emailUp">Email</label>
-											<input type="email" class="form-control" name="emailUp" id="emailUp" required="" autocomplete="off">
-											<p class="helper-block text-muted"><small><strong>Type carefully!</strong> You will be sent a confirmation email.</small></p>
-										</div>
-
-										<div class="form-group">
-											<label class="control-label text-inverse" for="passwordUp">Password</label>
-											<input type="password" class="form-control" name="passwordUp" id="passwordUp" required="" minlength="4">
-											<p class="helper-block text-muted"><small>The longer the better. Include numbers for protein.</small></p>
-										</div>
-
-										<div class="form-group">
-											<label class="control-label text-inverse" for="cpasswordUp">Confirm Password</label>
-											<input type="password" class="form-control" name="cpasswordUp" id="cpasswordUp" equalto="#passwordUp">
-											<p class="helper-block text-muted"><small>Enter your password again!</small></p>
-										</div>
-
-										<div class="form-group margin-top">
-											<div class="nice-checkbox">
-												<input class="checkbox-o" type="checkbox" name="newsletter" id="newsletter" checked="checked">
-												<label for="newsletter">Sign me up for the newsletter</label>
-											</div>
-										</div>
-
-										<div class="form-group form-actions">
-											<input type="submit" class="btn btn-primary" value="Create account">
-										</div><!--/form-group-->
-
-									</div><!--/cols-->
-								</div><!--/row-->
-
-							</form><!--/#signup-form-->
-						</div><!--/#signup-->
+					
 
 					</div><!--/tab-content-->
 
-					<div class="signin-footer">
-						<ul class="list-inline pull-right">
-							<li><a href="#">Knowledge base</a></li>
-						</ul>
-						<ul class="list-inline">
-							<li>&copy; 2014 Stilearning</li>
-							<li><a href="#">Terms of Use</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-						</ul>
-					</div>
 
 				</div><!--/signin-wapper-->
 
@@ -302,14 +240,7 @@
         <!-- This scripts will be reload after pjax or if popstate event is active (use with class .re-execute) -->
         <script src="scripts/89c3d6c9.initializer.js"></script>
         
-        <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-48454066-1');ga('send','pageview');
-        </script>
+
 
     </body>
 </html>

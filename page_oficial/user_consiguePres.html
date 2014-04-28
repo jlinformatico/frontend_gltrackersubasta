@@ -75,10 +75,9 @@
 *********************************************************************************
 -->
 
-
 <!---
 *********************************************************************************
-              COMIENZO SLIDER
+							COMIENZO SLIDER
 *********************************************************************************
 -->
 
@@ -137,50 +136,115 @@
 
 <!---
 *********************************************************************************
-            FIN SLIDER
+						FIN SLIDER
 *********************************************************************************
 -->
 
 <br></br>
-<br></br>
-<div class="container">
 
- <fieldset>
-  <legend>PREGUNTAS FRECUENTES</legend>
-    <blockquote>
-    <fieldset>
-      <ul>
-          <li>Como hago una publicacion? </li>
-          <li>Cuando y que necesito para pagar?</li>
-          <li>Como puedo cambiar las notificaciones que me llegan al email?</li>
-          <li>Como puedo estar seguro de que mis objetos llegara? en en las mismas condiciones?</li>
-          <li>Como acepto una puja?</li>
-          <li>Como puedo saber si un transportista es de confianza?
-          <li>Como rechazo una puja?</li>
-          <li>Como elimino mi transporte de Subasta de Servicios de Transporte?</li>
-      </ul>
-    </fieldset>
 
-    </blockquote>
 
-    <blockquote>
-    <ul>
-       <li> <p> ¿Como registrarme en Subasta de Servicios de Transporte? </p></li>
-        <footer>  aqui esta mi respuesta</footer>
+<!---
+*********************************************************************************
+            COMIENSZO PANEL DE MERCADERIA A TRASLADAR
+*********************************************************************************
+-->
 
-        <li>Administrar "Subasta de Servicios de Transporte"</li>
-        <li>He olvidado la contraseña</li>
-        <li>Como puedo cambiar la dirección de email?</li>
-        <li>Como puedo ajustar las notificaciones que me envian al email?</li>
-        <li>Como puedo ajustar las notificaciones que me envian por mensaje?</li>
-    </ul>
+  <div class="col-md-8">
 
-    </blockquote>
+      <form class="form-horizontal" role="form">
+      <div class="col-sm-12">
+        <label class="col-sm-4">ESPECIFICA TU MERCADERIA A TRASLADAR:</label>
+      </div>
+      <div class="form-group">
+        <label for="TIPO DE MERCADERIA" class="col-sm-2 control-label">TIPO DE MERCADERIA</label>
+        <div class="col-sm-4">
+          <div class="form-group">
+          </div>
+             <select class="form-control ">
+              <option value="PA">Inmueble</option>
+              <option value="CT">artefactos</option>
+              <option value="NY">artefactos electricos</option>
+              <option value="MD">joyas</option>
+              <option value="VA">otros</option>
+            </select>
+        </div>
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="email">
+        </div>
+      </div>
+        <div class="form-group">
+          <label for="inputName" class="col-sm-2 control-label">Cantidad</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputName" placeholder="Cantidad">
+          </div>
+          <label for="inputLastName" class="col-sm-2 control-label">Cel</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Cel">
+          </div>
+        </div>
 
- </fieldset>
-  
+        <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">Medidadas</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputCel" placeholder="Medidas">
+          </div>
 
-</div>
+          <label for="inputCel" class="col-sm-2 control-label"></label>
+
+          <div class="col-sm-4">
+              <button type="submit" class="btn btn-default">Enviar</button>
+          </div>
+      
+        </div>
+
+        <div class="form-group">
+              <label for="inputTel" class="col-sm-2 control-label">Peso</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputTel" placeholder="Peso">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label for="inputTel" class="col-sm-2 control-label">SERVICIOS ADICIONALES</label>
+
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+          <label>
+            <p>
+            <input type="checkbox">Transporte  
+            </p>
+            <p>
+            <input type="checkbox">Almacenaje
+            </p>
+            <p>
+            <input type="checkbox">Escolta particular/policial
+            </p>
+            <p>
+            <input type="checkbox">Agenciamiento
+            </p>
+            <p>
+            <input type="checkbox">Seguros
+            </p>
+            
+          </label>
+
+          </div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Consultar</button>
+        </div>
+        </div>
+      </form>
+
+<!--
+*********************************************************************************
+           FINAL DEL PANEL DE MERCADERIA A TRASLADAR
+*********************************************************************************
+-->
 
 
 
@@ -206,7 +270,14 @@
         
 
 
+</div>	
+
+
+
 </body>
 
 
 </html>
+
+
+
