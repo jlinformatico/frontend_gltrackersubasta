@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<header>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/favico-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ico/favico-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ico/favico-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../ico/favico-57-precomposed.png">
+        <link rel="shortcut icon" href="../ico/favico.png">
+        <link rel="shortcut icon" href="../ico/favico.ico">
+
+        <link rel="stylesheet" href="../styles/9281c719.vendor.css"/>        
+        <link rel="stylesheet" href="../styles/3fc417cd.main.css"/>
+</header>
+
+
+<body>
+
+<!---
+*********************************************************************************
+                BARRA DE NAVEGACION
+*********************************************************************************
+-->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Sistema de Subastas</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a class="active" href="user_Mercancia.html">Mercaderia</a></li>
+        <li><a href="#">Proveedor</a></li>
+        <li><a href="ve_Presupuesto.html">Presupuesto</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mi perfil</a></li>
+            <li><a href="#">Mi Mercaderia</a></li>
+            <li><a href="user_mensaje.html">Mensaje</a></li>
+            <li><a href="page-signin.html">Salir</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!---
+*********************************************************************************
+              FIN BARRA DE NAVEGACION
+*********************************************************************************
+-->
+
+
+<div class="content content-full">
+        <div class="signin-wrapper">
+        <div class="container">
+<!---
+*********************************************************************************
+            FORMULARIO DE  MERCADERIAS EN SUBASTA
+*********************************************************************************
+-->
+
+
+
+  <div class="col-md-11">
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#home" data-toggle="tab">Mercaderia Activa</a>
+      </li>
+      <li>
+        <a href="#other" data-toggle="tab">Historial</a>
+      </li>
+
+    </ul>
+
+     <div class="tab-content">
+       <div id="home" class="tab-pane active">
+
+           <br></br>
+          <br></br>
+
+           <div class="panel panel-primary"> <div class="panel-heading"><h4>Usuario / Mercadería /Presupuesto</h4></div></div>
+
+
+      <form class="form-horizontal" role="form">
+
+        <div class="form-group">
+
+          <div class="col-sm-6">
+              <h1><text>10 muebles</text></h1>
+          </div>
+          <div class="col-sm-6">
+              <h4>Trasporte de muebles</h4>  
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-sm-4">
+              <h4><text>Estado: en subasta</text></h4>
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-sm-3">
+              <h4><text>N° de Pujas:20</text></h4>
+          </div>
+          <div class="col-sm-3">
+              <h4>Recogida:Tacna (PE)</h4>  
+          </div>
+          <div class="col-sm-3">
+              <h4>Fecha Carga:Flexible</h4>  
+          </div>
+          <div class="col-sm-3">
+              <h4>Distancia: 120 KM</h4>  
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-3">
+              <h4><text>Pujas mas baja: $153</text></h4>
+          </div>
+          <div class="col-sm-3">
+              <h4>Entrega:  Arica (CH)</h4>  
+          </div>
+          <div class="col-sm-3">
+              <h4>Fecha Entrega:Flexible</h4>  
+          </div>
+          <div class="col-sm-3">
+              <h4>Tiempo: 45 min</h4>  
+          </div>
+        </div>
+            <input type="text" class="input-medium search-query">
+            <button type="submit" class="btn">Buscar</button>
+          </form>
+            <br></br>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <td>Empresa</td>
+                  <td>Envio</td>
+                  <td>Reputacion</td>
+                  <td>Servicio</td>
+                  <td>Fechas</td>
+                  <td>Presupuesto</td>
+                  <td>Acciones</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="../img/logoem2.jpg" alt="..." class="img-thumbnail" alt="Responsive image"></td>
+                  <td>Catalina</td>
+                  <td>53</td>
+                  <td>95%</td>
+                  <td>Transporte</td>
+                  <td>Flexible</td>
+                  <td>$155</td>
+                  <!-- botonera para hacer mantenimiento -->
+                  <td>
+                    <a class="btn btn-small btn-success" href="#">Ver info</a>
+                    <a class="btn btn-small btn-info" href="#">Aceptar</a>
+                    <a class="btn btn-warning" href="#">Rechazar</a>        
+                  </td>
+                </tr>
+                  <tr>
+                  <td><img src="../img/logoem1.jpg" alt="..." class="img-thumbnail" alt="Responsive image"></td>
+                  <td>Gltracker</td>
+                  <td>100</td>
+                  <td>98%</td>
+                  <td>Trasporte</td>
+                  <td>Flexible</td>
+                  <td>$152</td>
+                  <!-- botonera para hacer mantenimiento -->
+                  <td>
+                    <a class="btn btn-small btn-success" href="#">Ver info</a>
+                    <a class="btn btn-small btn-info" href="#">Aceptar</a>
+                    <a class="btn btn-warning" href="#">Rechazar</a>        
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+       </div>
+       <div id="other" class="tab-pane">
+       </div>
+    </div>      
+</div>
+
+
+  <!---
+*********************************************************************************
+           FINAL DEL  FORMULARIO DE  MERCADERIAS EN SUBASTA
+*********************************************************************************
+-->
+
+
+</div>
+</div>
+</div>
+
+        <!-- javascript
+        ================================================== -->
+        <script src="../scripts/39914ff3.vendor-main.js"></script>        
+        <script src="../scripts/756399db.vendor-usefull.js"></script>
+        <script src="../scripts/e7058f60.vendor-form.js"></script>        
+        <script src="../scripts/fc9d433c.vendor-editor.js"></script>        
+        <!--[if lte IE 8]>
+        <script src="scripts/eae815b5.excanvas.js"></script>
+        <![endif]-->
+        <script src="../scripts/2ce1156c.vendor-graph.js"></script>    
+        <script src="../scripts/37a77790.vendor-table.js"></script>
+        <script src="../scripts/1581b2aa.vendor-maps.js"></script>        
+        <script src="../scripts/5f4fd25b.vendor-util.js"></script>
+
+
+        <!-- required stilearn template js -->
+        <script src="../scripts/5917523f.main.js"></script>
+        <!-- This scripts will be reload after pjax or if popstate event is active (use with class .re-execute) -->
+        <script src="../scripts/89c3d6c9.initializer.js"></script>
+</div>  
+</body>
+</html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-<meta charset="utf-8">
+<html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <header>
@@ -30,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="index.html">Sistema de Subastas</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +41,7 @@
           <ul class="dropdown-menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Servicios</a></li>
-            <li><a href="#">Consulta Presupuesto</a></li>
+            <li><a href="user_consiguePres.html">Consulta Presupuesto</a></li>
             <li><a href="#">Publica mercadería</a></li>
             <li><a href="#">Buscar Proveedor</a></li>
             <li><a href="#">Preguntas Frecuentes</a></li>
@@ -90,7 +89,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="../img/slide1.png">
+      <img src="img/slide1.png">
       <div class="carousel-caption">
 
             <h3>Second slide label</h3>
@@ -99,7 +98,7 @@
     </div>
 
     <div class="item">
-      <img src="../img/slide2.png">
+      <img src="img/slide2.png">
       <div class="carousel-caption">
 
                   <h3>Second slide label</h3>
@@ -109,7 +108,7 @@
     </div>
 
     <div class="item">
-      <img src="../img/slide3.png">
+      <img src="img/slide3.png">
       <div class="carousel-caption">
                   <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -138,103 +137,99 @@
 <br></br>
 
 
+
 <!---
 *********************************************************************************
-            FORMULARIO DE REGISTRO DE PROVEEDOR
+            COMIENSZO PANEL DE MERCADERIA A TRASLADAR
 *********************************************************************************
 -->
 
-	<div class="col-md-8">
+  <div class="col-md-8">
 
-			<form class="form-horizontal" role="form">
-			<div class="col-sm-12">
-				<label class="col-sm-4">REGISTRA TU EMPRESA:</label>
-			</div>
-			<div class="form-group">
-				<label for="inputDNI" class="col-sm-2 control-label">RUC</label>
-				<div class="col-sm-4">
-				  <input type="text" class="form-control" id="inputDNI" placeholder="Ingrese su RUC">
-				</div>
-				<label for="inputEmail" class="col-sm-2 control-label">Razón Social</label>
-				<div class="col-sm-4">
-				  <input type="email" class="form-control" id="inputEmail3" placeholder="Razón Social">
-				</div>
-			</div>
-			  <div class="form-group">
-				<label for="inputName" class="col-sm-2 control-label">Gerente</label>
-				<div class="col-sm-4">
-				  <input type="text" class="form-control" id="inputName" placeholder="Nombre del Gerente">
-				</div>
-				<label for="inputLastName" class="col-sm-2 control-label">E-mail</label>
-				<div class="col-sm-4">
-				  <input type="text" class="form-control" id="inputLastName" placeholder="Email">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<label for="inputCel" class="col-sm-2 control-label">Celular</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputCel" placeholder="###-######">
-				</div>
-				<label for="inputTel" class="col-sm-2 control-label">Teléfono</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputTel" placeholder="###-######">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<label for="inputCel" class="col-sm-2 control-label">Cantidad de Personal</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputCel" placeholder="Cantidad Personal">
-				</div>
-				<label for="inputTel" class="col-sm-2 control-label">Número de Camiones</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputTel" placeholder="###-######">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<label for="inputCel" class="col-sm-2 control-label">Rubro</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputCel" placeholder="Transporte Monitoreado">
-				</div>
-				<label for="inputTel" class="col-sm-2 control-label">Cantidad de Envios</label>
-				<div class="col-sm-4">
-				  <input type="phone" class="form-control" id="inputTel" placeholder="Nro de Envios">
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <div class="checkbox">
-					<label>
-					  <input type="checkbox"> Deseo que envie información a mi email.
-					</label>
-				  </div>
-				</div>
-			  </div>
-			  <div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-				  <button type="submit" class="btn btn-default">Registrar</button>
-				</div>
-			  </div>
-			</form>
-                                
-            </div>
+      <form class="form-horizontal" role="form">
+      <div class="col-sm-12">
+        <label class="col-sm-4">ESPECIFICA TU MERCADERIA A TRASLADAR:</label>
+      </div>
+      <div class="form-group">
+        <label for="TIPO DE MERCADERIA" class="col-sm-2 control-label">TIPO DE MERCADERIA</label>
+        <div class="col-sm-4">
+          <div class="form-group">
+          </div>
+             <select class="form-control ">
+              <option value="PA">Lima</option>
+              <option value="CT">Tarapoto</option>
+              <option value="NY">New York</option>
+              <option value="MD">Maryland</option>
+              <option value="VA">Virginia</option>
+            </select>
+        </div>
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="email">
+        </div>
+      </div>
+        <div class="form-group">
+          <label for="inputName" class="col-sm-2 control-label">Cantidad</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputName" placeholder="Cantidad">
+          </div>
+          <label for="inputLastName" class="col-sm-2 control-label">Cel</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputLastName" placeholder="Cel">
+          </div>
+        </div>
 
-            <div class="col-md-4">
-                <h3>Servicios que brinda</h3>
-                <p>Los servicios de e-commerce</p>
-                <h3>Listado de Servicios</h3>
-                <ul>
-                    <li>Transporte</li>
-                    <li>Almacenaje</li>
-                    <li>Escolta particular/policial</li>
-                    <li>Agenciamiento</li>
-                    <li>Seguros</li>
-                    <li>Resguardo Policial</li>
-                    <li>Estiba/Desestiba</li>
-                </ul>
-            </div>
-  <!---
+        <div class="form-group">
+          <label for="inputCel" class="col-sm-2 control-label">Medidadas</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputCel" placeholder="Medidas">
+          </div>      
+        </div>
+
+        <div class="form-group">
+              <label for="inputTel" class="col-sm-2 control-label">Peso</label>
+          <div class="col-sm-4">
+            <input type="phone" class="form-control" id="inputTel" placeholder="Peso">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label for="inputTel" class="col-sm-2 control-label">SERVICIOS ADICIONALES</label>
+
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+          <label>
+            <p>
+            <input type="checkbox">Transporte  
+            </p>
+            <p>
+            <input type="checkbox">Almacenaje
+            </p>
+            <p>
+            <input type="checkbox">Escolta particular/policial
+            </p>
+            <p>
+            <input type="checkbox">Agenciamiento
+            </p>
+            <p>
+            <input type="checkbox">Seguros
+            </p>
+            
+          </label>
+
+          </div>
+        </div>
+        </div>
+        <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Registrar</button>
+        </div>
+        </div>
+      </form>
+
+<!--
 *********************************************************************************
-           FINAL DEL FORMULARIO EMPRESA
+           FINAL DEL PANEL DE MERCADERIA A TRASLADAR
 *********************************************************************************
 -->
 
@@ -249,3 +244,6 @@
 
 
 </html>
+
+
+

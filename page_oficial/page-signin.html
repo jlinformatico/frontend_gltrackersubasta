@@ -26,6 +26,9 @@
     </head>
 
     <body class="animated fadeIn">		
+
+
+
 <!---
 *********************************************************************************
 								BARRA DE NAVEGACION
@@ -52,20 +55,20 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="user_servicios.html">Servicios</a></li>
-            <li><a href="user_consiguePres.html">Consulta Presupuesto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="consiguePres.html">Consulta Presupuesto</a></li>
             <li><a href="#">Publica mercadería</a></li>
             <li><a href="#">Buscar Proveedor</a></li>
-            <li><a href="user-preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
           </ul>
         </li>
-        <li><a href="user_beneficio.html">Beneficios</a></li>
-        <li><a href="user_contact.html">Contacto</a></li>
+        <li><a href="beneficio.html">Beneficios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="page-signin.html">Inicia Sesion</a></li>
-            <li><a href="user-registro.html">Registrate</a></li>
+            <li><a href="registro.html">Registrate</a></li>
           </ul>
         </li>
       </ul>
@@ -79,7 +82,6 @@
 							FIN BARRA DE NAVEGACION
 *********************************************************************************
 -->
-
 
 
 
@@ -132,7 +134,7 @@
 										</a>
 									</div><!--/signin-brand-->
 
-									<form  name="login" onsubmit="return login_page();" method="POST" data-validate="form" role="form" id="signin-form">
+									<form  name="login"  action="usuario/user_mensaje.html" method="POST" data-validate="form" role="form" id="signin-form">
 										<p><small>Administración de cuenta. <a href="#">Leer mas?</a></small></p>
 										<div class="form-group">
 											<div class="input-group input-group-in">
@@ -157,7 +159,7 @@
 
 										<div class="form-group form-actions">
 											<input type="submit" class="hidden-sm btn btn-primary" value="Entrar">
-											<input type="submit" class="visible-sm btn btn-lg btn-block btn-primary" value="Sign In">
+											<input type="submit" class="visible-sm btn btn-lg btn-block btn-primary" value="Entrar">
 										</div><!--/form-group-->
 
 										<p>
@@ -199,7 +201,7 @@
 
 	                                        <div class="modal-footer">
 	                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	                                            <button type="button" class="btn btn-primary">Send reset link</button>
+	                                            <button type="button" class="btn btn-primary" onclick="acceso()">Send reset link</button>
 	                                        </div>
 	                                    </div><!-- /.modal-content -->
 	                                </div><!-- /.modal-dialog -->
@@ -243,14 +245,7 @@
         <!-- mi funcion script-->
         <script type="text/javascript">
 
-        	function login_page (argument) {
-        		miTitulo = "<h1>" + document.login.username.value + "</h1>"
-         		miClave = "<h3>" + document.login.password.value + "</h3>"
 
-         		alert(miClave);
-
-        		// body...
-        	}
         </script>
 
 

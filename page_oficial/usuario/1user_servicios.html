@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<header>
+  <link href="css/bootstrap.min.css" rel="stylesheet">  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/favico-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/favico-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/favico-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/favico-57-precomposed.png">
+        <link rel="shortcut icon" href="ico/favico.png">
+        <link rel="shortcut icon" href="ico/favico.ico">
+
+        <link rel="stylesheet" href="styles/9281c719.vendor.css"/>        
+        <link rel="stylesheet" href="styles/3fc417cd.main.css"/>
+        <style type="text/css">
+    /**** BASE ****/
+body {
+    color: #888;   
+}
+a {
+    color: #03a1d1;
+    text-decoration: none!important;
+}
+
+/**** LAYOUT ****/
+.list-inline>li {
+    padding: 0 10px 0 0;
+}
+.container-pad {
+    padding: 30px 15px;
+}
+
+
+/**** MODULE ****/
+.bgc-fff {
+    background-color: #fff!important;
+}
+.box-shad {
+    -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+.brdr {
+    border: 1px solid #ededed;
+}
+
+/* Font changes */
+.fnt-smaller {
+    font-size: .9em;
+}
+.fnt-lighter {
+    color: #bbb;
+}
+
+/* Padding - Margins */
+.pad-10 {
+    padding: 10px!important;
+}
+.mrg-0 {
+    margin: 0!important;
+}
+.btm-mrg-10 {
+    margin-bottom: 10px!important;
+}
+.btm-mrg-20 {
+    margin-bottom: 20px!important;
+}
+
+/* Color  */
+.clr-535353 {
+    color: #535353;
+}
+
+
+
+
+/**** MEDIA QUERIES ****/
+@media only screen and (max-width: 991px) {
+    #property-listings .property-listing {
+        padding: 5px!important;
+    }
+    #property-listings .property-listing a {
+        margin: 0;
+    }
+    #property-listings .property-listing .media-body {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #property-listings .property-listing img {
+        max-width: 180px;
+    }
+}
+    </style>
+</header>
+
+
+<body>
+
+<!---
+*********************************************************************************
+                BARRA DE NAVEGACION
+*********************************************************************************
+-->
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Sistema de Subastas</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="user_servicios.html">Servicios</a></li>
+            <li><a href="user_consiguePres.html">Consulta Presupuesto</a></li>
+            <li><a href="#">Publica mercadería</a></li>
+            <li><a href="#">Buscar Proveedor</a></li>
+            <li><a href="user-preguntas.html">Preguntas Frecuentes</a></li>
+          </ul>
+        </li>
+        <li><a href="user_beneficio.html">Beneficios</a></li>
+        <li><a href="user_contact.html">Contacto</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="page-signin.html">Inicia Sesion</a></li>
+            <li><a href="user-registro.html">Registrate</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!---
+*********************************************************************************
+              FIN BARRA DE NAVEGACION
+*********************************************************************************
+-->
+
+<!---
+*********************************************************************************
+              COMIENZO SLIDER
+*********************************************************************************
+-->
+
+<!-- RESPONSIVE SLIDER - START -->
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slide1.png">
+      <div class="carousel-caption">
+
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slide2.png">
+      <div class="carousel-caption">
+
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slide3.png">
+      <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<!-- RESPONSIVE SLIDER - END -->
+
+<!---
+*********************************************************************************
+            FIN SLIDER
+*********************************************************************************
+-->
+
+<br></br>
+<!---
+*********************************************************************************
+            COMIENSZO PANEL DE CONSULTA
+*********************************************************************************
+-->
+
+
+<div class="container">
+
+
+  <div class="panel panel-primary">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Consulta Presupuesto</h3>
+    </div>
+
+    <div class="panel-body">
+
+        <form class="form-inline" role="form">
+
+          <div class="form-group col-lg-4">
+            <label for="exampleInputEmail1">Origen</label>
+            <select class="form-control ">
+              <option value="PA">Pennsylvania</option>
+              <option value="CT">Connecticut</option>
+              <option value="NY">New York</option>
+              <option value="MD">Maryland</option>
+              <option value="VA">Virginia</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-3">
+            <label for="exampleInputPassword1">Destino</label>
+            <select class="form-control ">
+              <option value="PA">Pennsylvania</option>
+              <option value="CT">Connecticut</option>
+              <option value="NY">New York</option>
+              <option value="MD">Maryland</option>
+              <option value="VA">Virginia</option>
+            </select>
+          </div>
+
+          <div class="form-group col-lg-5">
+            <label for="exampleInputFile">Compara presupuestos!</label>
+            <button type="submit" class="btn btn-default">Consegir presupuesto</button>
+          </div> 
+       
+        </form>
+  
+    </div>
+  </div>
+
+<!---
+*********************************************************************************
+            FIN DEL PANEL DE CONSULTA
+*********************************************************************************
+-->
+
+<!---
+*********************************************************************************
+            COMIENZO DEL PANEL DE BENEFICIOS
+*********************************************************************************
+-->
+
+      <div class="container-fluid" >
+        <div class="container container-pad" id="property-listings">
+            
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Nuestros servicios</h1>
+                <p>A snippet I recently used to display homes for a local brokerage.  Focused more on images when accessed through mobile</p>
+              </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6"> 
+
+                    <!-- Begin Listing: 609 W GRAVERS LN-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/Yu59d899Ocpyr_RnF0-8qNJX1oYibjwp9TiLy-bZvU9vRJ2iC1zSQgFwW-fTCs6tVkKrj99s7FFm5Ygwl88xIA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,975,000 <small class="pull-right">609 W Gravers Ln</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>4,820 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Situated between fairmount
+                                park and the prestigious philadelphia cricket
+                                club, this beautiful 2+ acre property is truly
+                                ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
+                                Evergreen</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+                    <!-- Begin Listing: 218 LYNNEBROOK LN-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/zMjCkcFeFDXDAP8xDhbD9ZmrVL7oGkBvSnh2bDBZ6UB5UHXa3_g8c6XYhRY_OxgGaMBMehiTWXDSLzBMaIzRhA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,975,000 <small class="pull-right">218 Lynnebrook Ln</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>6,959 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>6 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Impressively positioned
+                                overlooking 3.5 captivating acres, designated
+                                as "significant" by the chestnut hill
+                                historical s...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Blue Bell</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+                    <!-- Begin Listing: 209 CHESTNUT HILL AVE-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/iwn7qH9r9OPnqTaTTxxb8PBzQHk2EiHU2PBBntt041AZsVsGY-SeUexTMLgRcYSJukrKOwHaYnTVXAsk6RdSmA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,599,999 <small class="pull-right">209 Chestnut Hill ve</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>16,581 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>8 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>4 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Built in 1909 by
+                                pittsburgh steel magnate henry a. laughlin,
+                                greylock is a classic chestnut hill stone
+                                mansion once cons...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ng and Foster-Devon</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+                    <!-- Begin Listing: 704 SAINT GEORGES ST-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/7IZk2HTN0AcHnIb7VCvisTUc3kTbn0UyHQlVAlwkNLM3_8UNN8pcgy9u6KVNoRGGH_kdUlpYehdbqzctRNUebg.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,595,000 <small class="pull-right">704 Saint Georges St</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>0 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>4 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Blake development is proud
+                                to offer the second of two distinctly unique
+                                homes located on one of the most desirable
+                                stree...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
+                                Evergreen</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+
+
+                </div>
+
+                <div class="col-sm-6">  
+
+                    <!-- Begin Listing: 1220-32 N HOWARD ST-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/vGoNjc2jHGb87GlnnDQlf6LxeOUgIOn0bL6Wvn1nEnig2Ntq6W7xN5cOQBZZeNxl9O42DOkHUw0LNnj1ZB2KHA.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,500,000 <small class="pull-right">1220-32 N Howard St</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>4,900 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>1 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>1 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">A once in a lifetime
+                                opportunity to own a unique live / work space
+                                in one of philadelphia's most popular
+                                neighborhoods. ...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of ll Banker Preferred-Philadelphia</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+                    <!-- Begin Listing: 9006 CREFELD ST-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/uLp58OH37CTPHxXcgJXYw8zT2u3xg_2XIbFndB6J0WTSAStGBaEV6YsdAseSZTKAdthm0OzG-Ca_EIkoXIEBxw.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,295,000 <small class="pull-right">9006 Crefeld St</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>7,672 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>7 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">Located in chestnut hill,
+                                recently named by the american planning
+                                association as one of america's top 10 great
+                                neighborh...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of RE/MAX Services</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+
+                    <!-- Begin Listing: 701 W ALLENS LN-->
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a class="pull-left" href="#" target="_parent">
+                            <img alt="image" class="img-responsive" src="http://images.prd.mris.com/image/V2/1/K12MLs4i-e2rsQ-rA6DoCwlysXSrEXZyHtCFkrOLsvK1y2mvbUrlmw5pMXX1laXlnY9_0VU82YeS3EucwIchtg.jpg"></a>
+
+                            <div class="clearfix visible-sm"></div>
+
+                            <div class="media-body fnt-smaller">
+                                <a href="#" target="_parent"></a>
+
+                                <h4 class="media-heading">
+                                  <a href="#" target="_parent">$1,175,000 <small class="pull-right">701 W Allens Ln</small></a></h4>
+
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>9,824 SqFt</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>8 Beds</li>
+
+                                    <li style="list-style: none">|</li>
+
+                                    <li>5 Baths</li>
+                                </ul>
+
+                                <p class="hidden-xs">A once in a lifetime
+                                opportunity! live in this grand home with its
+                                stunning entry and staircase, bedroom suites,
+                                firepla...</p><span class="fnt-smaller fnt-lighter fnt-arial">Courtesy of HS Fox & Roach-Chestnut Hill
+                                Evergreen</span>
+                            </div>
+                        </div>
+                    </div><!-- End Listing-->
+                </div><!-- End Col -->
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </div>
+
+<!---
+*********************************************************************************
+           FINAL DEL PANEL DE BENEFICIOS
+*********************************************************************************
+-->
+
+</div>
+</div>
+
+        <!-- javascript
+        ================================================== -->
+        <script src="scripts/39914ff3.vendor-main.js"></script>        
+        <script src="scripts/756399db.vendor-usefull.js"></script>
+        <script src="scripts/e7058f60.vendor-form.js"></script>        
+        <script src="scripts/fc9d433c.vendor-editor.js"></script>        
+        <!--[if lte IE 8]>
+        <script src="scripts/eae815b5.excanvas.js"></script>
+        <![endif]-->
+        <script src="scripts/2ce1156c.vendor-graph.js"></script>    
+        <script src="scripts/37a77790.vendor-table.js"></script>
+        <script src="scripts/1581b2aa.vendor-maps.js"></script>        
+        <script src="scripts/5f4fd25b.vendor-util.js"></script>
+
+
+        <!-- required stilearn template js -->
+        <script src="scripts/5917523f.main.js"></script>
+        <!-- This scripts will be reload after pjax or if popstate event is active (use with class .re-execute) -->
+        <script src="scripts/89c3d6c9.initializer.js"></script>
+        
+
+
+</body>
+
+
+</html>
